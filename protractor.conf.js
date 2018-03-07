@@ -17,7 +17,7 @@ const getScreenshotReport = () => {
 	});
 	return screenshotReporter;
 };
-const baseUrl = 'http://cst-components.dev.apps.cs.sgp.dbs.com/';
+const baseUrl = 'http://juliemr.github.io/protractor-demo/';
 exports.config = {
 	baseUrl: baseUrl,
 	framework: 'jasmine',

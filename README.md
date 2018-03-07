@@ -1,17 +1,12 @@
 ## Protractor e2e standalone
+A stand-alone scaffolding project for e2e testing. So that individual tester can start testing without going through source code.
+It supports jasmine and cucumber out of box. Developer can choose either jasmine or cucumber on base of their needs. 
 
-### Proxy Setup
-```bash
-npm config set proxy http://bcproxy.sgp.dbs.com:8080
-npm config set https-proxy http://bcproxy.sgp.dbs.com:8080
-npm config set http-proxy http://bcproxy.sgp.dbs.com:8080
-```
-**Artifactory**- Requires to install dbs specific modules
-```bash
-npm config set registry http://artifactory.dev.sys.cs.sgp.dbs.com/artifactory/api/npm/dbs-npm
-```
+## Clone Project and rename to your project name
+git clone https://github.com/deepakshrma/protractor-standalone-scaffold.git ./MyAwesomeProject
 ### Install dependency
 ```bash
+cd MyAwesomeProject
 npm install
 ```
 ### Update Web-Drivers
@@ -19,11 +14,12 @@ npm install
 npm run webdriver:clean
 npm run webdriver:update
 ```
+**Note:** You may have to retry for 3-5 times, because of proxy issue.  
+
 ### Configure protractor
-```bash
-#open and configure protractor.conf.js
-#Change baseUrl 
-```
+**open and configure protractor.conf.js**  
+_Change baseUrl_
+
 ### List all command
 ```bash
 npm run list
@@ -39,7 +35,8 @@ npm run webdriver:start
 ```bash
 npm run test
 ```
-### Where to create specs files
+### Where to create specs/feature files
+### Jasmine
 protractor-standalone\
 <space><space><space>|--specs\
 <space><space><space><space><space><space>|--your_new.spec.js
@@ -48,13 +45,13 @@ protractor-standalone\
 It is done automatically. However file name should end with **specs.js** inside **specs** folder.
 
 ### Where to find html results
-protractor-standalone\
-<space><space><space>|--e2e_reports\
-<space><space><space><space><space><space>|--html\
-<space><space><space><space><space><space><space><space><space>|--index.html
+protractor-standalone   
+<space><space><space>|--e2e_reports     
+<space><space><space><space><space><space>|--html   
+<space><space><space><space><space><space><space><space><space>|--index.html    
 
 ### Authors:
-* Deepak V<deepak@dbs.com>
+* __@deepakshrma(deepak.m.shrma@gmail.com.com)__
 
 ## License
 MIT 
