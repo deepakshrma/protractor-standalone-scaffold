@@ -14,17 +14,22 @@
     "webdriver:clean": "webdriver-manager clean",
     "webdriver:start": "webdriver-manager start --versions.chrome 2.32 --versions.standalone 3.5.3",
     "webdriver:update": "webdriver-manager update --proxy=http://bcproxy.sgp.dbs.com:8080 --versions.chrome 2.32 --versions.standalone 3.5.3",
-    "test": "protractor"
+    "test": "protractor",
+    "test:cucumber": "protractor protractor-cucumber.config.js"
   },
   "keywords": [],
   "author": "deepak@dbs.com",
   "license": "ISC",
   "devDependencies": {
     "batman-cli": "^1.1.2",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^4.0.0",
+    "cucumber-html-reporter": "^4.0.2",
     "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.3.0",
+    "protractor-cucumber-framework": "^4.2.0",
     "protractor-jasmine2-screenshot-reporter": "^0.5.0",
     "webdriver-manager": "^12.0.6"
-  },
-  "dependencies": {}
+  }
 }
