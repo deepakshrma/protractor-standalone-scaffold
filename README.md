@@ -3,7 +3,9 @@ A stand-alone scaffolding project for e2e testing. So that individual tester can
 It supports jasmine and cucumber out of box. Developer can choose either jasmine or cucumber on base of their needs. 
 
 ## Clone Project and rename to your project name
+```bash
 git clone https://github.com/deepakshrma/protractor-standalone-scaffold.git ./MyAwesomeProject
+```
 ### Install dependency
 ```bash
 cd MyAwesomeProject
@@ -51,7 +53,7 @@ protractor-standalone
 <space><space><space><space><space><space><space><space><space>|--index.html    
 
 ### Authors:
-* __@deepakshrma(deepak.m.shrma@gmail.com.com)__
+* __@deepakshrma(deepak.m.shrma@gmail.com)__
 
 ## License
 MIT 
