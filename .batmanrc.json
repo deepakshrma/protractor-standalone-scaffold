@@ -1,0 +1,22 @@
+{
+    "start": [
+        "npm run start",
+        "Run protractor/e2e testing"
+    ],
+    "webdriver:clean": [
+        "npm run webdriver:clean",
+        "Clean selenium webdriver library"
+    ],
+    "webdriver:start": [
+        "npm run webdriver:start",
+        "Start selenium webdriver library"
+    ],
+    "webdriver:update": [
+        "npm run webdriver:update",
+        "Update selenium webdriver library"
+    ],
+    "test": [
+        "npm run test",
+        "Run protractor/e2e testing"
+    ]
+}

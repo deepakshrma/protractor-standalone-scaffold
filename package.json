@@ -1,0 +1,30 @@
+{
+  "name": "protractor-standalone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "batman": "batman",
+    "list": "batman ls",
+    "list:full": "batman ls --full",
+    "start": "npm run e2e",
+    "e2e": "protractor",
+    "protractor": "protractor",
+    "webdriver-manager": "webdriver-manager",
+    "webdriver:clean": "webdriver-manager clean",
+    "webdriver:start": "webdriver-manager start --versions.chrome 2.32 --versions.standalone 3.5.3",
+    "webdriver:update": "webdriver-manager update --proxy=http://bcproxy.sgp.dbs.com:8080 --versions.chrome 2.32 --versions.standalone 3.5.3",
+    "test": "protractor"
+  },
+  "keywords": [],
+  "author": "deepak@dbs.com",
+  "license": "ISC",
+  "devDependencies": {
+    "batman-cli": "^1.1.2",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "^5.3.0",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0",
+    "webdriver-manager": "^12.0.6"
+  },
+  "dependencies": {}
+}
